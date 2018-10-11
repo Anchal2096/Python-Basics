@@ -1,5 +1,5 @@
 from tkinter import *
-from tkinter import ttk
+
 gui = Tk()
 gui.geometry("400x400")
 #make sure first is capital and second is not
