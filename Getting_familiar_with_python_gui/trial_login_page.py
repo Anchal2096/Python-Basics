@@ -1,12 +1,16 @@
 from tkinter import *
-from tkinter import ttk
+
 gui = Tk()
+# Main window properties
 gui.geometry("400x400")
-#make sure first is capital and second is not
 gui.title("First title")
-a = Label(gui ,text="username").grid(row=0,column = 0)
-b = Label(gui ,text="password").grid(row=1,column=0)
-e = Entry(gui).grid(row=0,column=1)
-f = Entry(gui,show="**").grid(row=1,column=1)
-c = Button(gui,text="LOGIN").grid(row=2,column=0)
+gui.resizable(False, False)
+
+# widgets in the main Window
+username = Label(gui, text="username").grid(row=0, column=0)
+password = Label(gui, text="password").grid(row=1, column=0)
+name_field = Entry(gui).grid(row=0, column=1)
+password_field = Entry(gui, show="**").grid(row=1, column=1)
+submit_button = Button(gui, text="LOGIN").grid(row=2, column=0)
+
 gui.mainloop()
